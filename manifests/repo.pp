@@ -23,7 +23,7 @@ class filebeat::repo {
           repos    => 'main',
           pin      => $filebeat::repo_priority,
           key      => {
-            name   => 'elastic-archive-keyring.gpg',
+            id     => '46095ACC8548582C1A2699A9D27D666CD88E42B4',
             source => 'https://artifacts.elastic.co/GPG-KEY-elasticsearch',
           },
         }
