@@ -213,6 +213,9 @@ end -%>
       <%- end -%>
     <%- end -%>
   tail_files: <%= @tail_files %>
+  <%- if @file_identity == 'native' -%>
+  file_identity.native: ~
+  <%- end -%>
 
   # Experimental: If symlinks is enabled, symlinks are opened and harvested. The harvester is openening the
   # original for harvesting but will report the symlink name as source.
